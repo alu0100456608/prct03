@@ -1,0 +1,104 @@
+18. Escriba el programa que muestra por la consola la frase "Hola Mundo". ¿Que significado tiene la salida? (puts ’Hola Mundo’)
+	La salida imprime el texto "Hola mundo" e indica que puts ha devuelto nil
+
+21. ¿Que diferencia hay entre "\t\n" y ’\t\n’?
+	Con las comillas dobles Ruby reemplaza \t como un tabulador y \n como un salto de línea, mientras que con las simples solo lo interpreta como una cadena
+
+22. ¿Como funciona %q? ¿Que es %q{hello world\n}? ¿Que es %q{'a' 'b' 'c'}?
+	Actua como unas comillas simples con el contenido que se le pase entre llaves.
+	La cadena de texto "helo world\\n"
+	La cadena de texto "'a' 'b' 'c'"
+
+23. ¿Como funciona %Q? ¿Qu ́e es %Q{hello world\n}? ¿Que es %Q{"a" "b" "c"}?
+        Actua como unas comillas dobles con el contenido que se le pase entre llaves.
+        La cadena de texto "helo world\n"
+        La cadena de texto "\"a\" \"b\" \"c\""
+
+24. ¿Que queda en c?
+	En c queda "--4--\n--2-"
+
+25. ¿Que queda en c?
+        En c queda "--\#{a}--\n--\#{b}--\n"
+
+26. s = "hello". ¿Cual es el valor de las siguientes expresiones?
+	s[0,2]	=> "he"
+	s[-1,1]	=> "o"
+	s[0,10]	=> "hello"
+
+27. ¿Que queda en g?
+	La concatenación de "hello" con " world", es decir: "hello world"
+
+28. ¿Que queda en e?
+	"..."
+
+29. ¿Cual es el resultado?
+	"2 2 2 "
+
+30. ¿Que es esto? %w[this is a test]
+	Un array que contine las cadenas "this", "is", "a", "test"
+
+31. ¿Que es esto? %w[\t \n]
+	Un array que contiene las cadenas "\\t", "\\n"
+
+32. ¿Que es esto? %W[\t \n]
+	Un array que contiene las cadenas "\t", "\n"
+
+33. ¿Que contiene nils? nils = Array.new(3)
+	[nil, nil, nil]
+
+34. ¿Que contiene zeros? zeros = Array.new(3, 0)
+	[0, 0, 0]
+
+35. ¿Que queda en b?
+	El array x, es decir: [[1, 2], [3, 4]]
+
+36. ¿Que queda en c?
+	[0, 2, 4]
+
+37. ¿Cual es el resultado de cada una de estas operaciones?
+	irb(main):002:0> a = ('a'..'e').to_a
+	=> ["a", "b", "c", "d", "e"]
+	irb(main):003:0> a[1,1]
+	=> ["b"]
+	irb(main):004:0> a[-2,2]
+	=> ["d", "e"]
+	irb(main):005:0> a[0..2]
+	=> ["a", "b", "c"]
+	irb(main):006:0> a[0...1]
+	=> ["a"]
+	irb(main):007:0> a[-2...-1]
+	=> ["d"]
+
+38. ¿Cual es el resultado de cada una de estas operaciones?
+	irb(main):022:0* a
+	=> ["a", "b", "c", "d", "e"]
+	irb(main):023:0> a[0,2] = %w{A B}
+	=> ["A", "B"]
+	irb(main):024:0> a
+	=> ["A", "B", "c", "d", "e"]
+	irb(main):025:0> a[2..5] = %w{C D E}
+	=> ["C", "D", "E"]
+	irb(main):026:0> a
+	=> ["A", "B", "C", "D", "E"]
+	irb(main):027:0> a[0,0] = [1,2,3]
+	=> [1, 2, 3]
+	irb(main):028:0> a
+	=> [1, 2, 3, "A", "B", "C", "D", "E"]
+	irb(main):029:0> a[0,2] = []
+	=> []
+	irb(main):030:0> a
+	=> [3, "A", "B", "C", "D", "E"]
+	irb(main):031:0> a[-1,1] = [ 'Z' ]
+	=> ["Z"]
+	irb(main):032:0> a
+	=> [3, "A", "B", "C", "D", "Z"]
+	irb(main):033:0> a[-2,2] = nil
+	=> nil
+	irb(main):034:0> a
+	=> [3, "A", "B", "C", nil]
+
+38. ¿Cual es el resultado de cada una de estas operaciones?
+
+
+
+
